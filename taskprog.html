@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progress Tracker</title>
+  <link rel="stylesheet" href="taskprog.css" />
+</head>
+<body>
+   <ul id="navbar">
+        <li id="heading">Task-Manager</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="taskadd.html">add task</a></li>
+        <li><a href="taskshow.html">show tasks</a></li>
+        <li><a href="taskprog.html">progress</a></li>
+        </ul>
+
+  <main class="progress-container">
+    <h1>Overall Progress</h1>
+
+    <div class="progress-stats">
+      <p>Total Tasks: <span id="totalTasks">0</span></p>
+      <p>Completed Tasks: <span id="completedTasks">0</span></p>
+      <p>Pending Tasks: <span id="pendingTasks">0</span></p>
+    </div>
+
+    <div class="progress-bar-wrapper">
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill">0%</div>
+      </div>
+    </div>
+
+    <div class="milestones" id="milestones">
+      <!-- Milestones will be shown here -->
+    </div>
+  </main>
+
+  <script src="taskprog.js"></script>
+</body>
+</html>

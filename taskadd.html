@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Task - Progress Tracker</title>
+  <link rel="stylesheet" href="taskadd.css" />
+</head>
+<body>
+  <nav >
+    <ul id="navbar">
+        <li id="heading">Task-Manager</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="taskadd.html">add task</a></li>
+        <li><a href="taskshow.html">show tasks</a></li>
+        <li><a href="taskprog.html">progress</a></li>
+        </ul>
+  </nav>
+
+  <main class="form-container">
+    <h1>Add a New Task</h1>
+    <form id="taskForm">
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" required />
+
+      <label for="taskDescription">Description:</label>
+      <textarea id="taskDescription" rows="4" required></textarea>
+
+      <label for="taskDueDate">Due Date:</label>
+      <input type="date" id="taskDueDate" required />
+
+      <button type="submit">Add Task</button>
+    </form>
+    <p id="msg" class="success-msg"></p>
+  </main>
+
+  <script src="taskadd.js"></script>
+</body>
+</html>
