@@ -26,6 +26,6 @@ document.getElementById("taskForm").addEventListener("submit", function (e) {
 
   document.getElementById("taskForm").reset();
 
-    window.location.href = "taskhome.html";
+    window.location.href = "index.html";
 
 });
